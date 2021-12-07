@@ -1,6 +1,3 @@
-
-
-
 def part1(input):
     pos = [0, 0]
     down = lambda pos, x: (pos[0], pos[1] + x)
