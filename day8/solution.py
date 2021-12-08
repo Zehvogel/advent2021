@@ -1,3 +1,6 @@
+import time
+
+
 def get_lr(input):
     l, r = input.split("|")
     return (l.strip().split(), r.strip().split())
@@ -112,7 +115,10 @@ def main():
     with open("day8/input.txt") as f:
         input =  f.readlines()
         print(f"solution for part 1 is: {part1(input)}")
+        t0 = time.perf_counter_ns()
         print(f"solution for part 2 is: {part2(input)}")
+        t1 = time.perf_counter_ns()
+        print(f"part 2 took {t1-t0} ns")
 
 if __name__ == "__main__":
     main()
