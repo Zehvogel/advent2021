@@ -27,7 +27,7 @@ def part2(input):
     return calc(input, 256)
 
 def main():
-    with open("day6/input.txt") as f:
+    with open("day06/input.txt") as f:
         input = f.read()
         print(f"solution for part 1 is: {part1(input)}")
         print(f"solution for part 2 is: {part2(input)}")

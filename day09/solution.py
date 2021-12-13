@@ -70,7 +70,7 @@ def part2(input):
     return sizes[-1] * sizes[-2] * sizes[-3]
 
 def main():
-    with open("day9/input.txt") as f:
+    with open("day09/input.txt") as f:
         input =  f.readlines()
         t0 = time.perf_counter_ns()
         print(f"solution for part 1 is: {part1(input)}")

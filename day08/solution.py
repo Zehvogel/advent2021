@@ -112,7 +112,7 @@ def part2(input):
     return res
 
 def main():
-    with open("day8/input.txt") as f:
+    with open("day08/input.txt") as f:
         input =  f.readlines()
         print(f"solution for part 1 is: {part1(input)}")
         t0 = time.perf_counter_ns()

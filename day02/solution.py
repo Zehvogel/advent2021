@@ -21,7 +21,7 @@ def part2(input):
     return pos[0] * pos[1]
 
 def main():
-    with open("day2/input.txt") as f:
+    with open("day02/input.txt") as f:
         f_split = (l.split(" ") for l in f)
         f_m = ((a, int(b)) for a, b in f_split)
         print(f"solution for part 1 is: {part1(f_m)}")

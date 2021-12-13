@@ -31,7 +31,7 @@ def part2(input):
     return calc_cost(input, cost_f2)
 
 def main():
-    with open("day7/input.txt") as f:
+    with open("day07/input.txt") as f:
         input = [int(x) for x in f.read().split(",")]
         print(f"solution for part 1 is: {part1(input)}")
         print(f"solution for part 2 is: {part2(input)}")

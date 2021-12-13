@@ -17,7 +17,7 @@ def part2(input):
     return part1(sums)
 
 def main():
-    with open("day1/input.txt") as f:
+    with open("day01/input.txt") as f:
         f_int = (int(a) for a in f)
         print(f"solution for part 1 is: {part1(f_int)}")
         f.seek(0)
