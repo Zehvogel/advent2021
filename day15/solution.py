@@ -14,7 +14,7 @@ def neighbors(pos, shape):
         yield (pos[0] + 1, pos[1])
 
 
-def djikstra(m, start):
+def dijkstra(m, start):
     dist = np.full_like(m, np.inf, dtype=np.float64)
     dist[start] = 0
 
@@ -34,7 +34,7 @@ def djikstra(m, start):
 
 def shortest_path(m, start, finish):
     td0 = time.perf_counter_ns()
-    dist = djikstra(m, start)
+    dist = dijkstra(m, start)
     td1 = time.perf_counter_ns()
     print(f"time for dijkstra: {td1- td0} ns")
     return dist[finish]
